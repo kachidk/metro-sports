@@ -24,7 +24,7 @@ export default {
         }
 
         function homepage(){
-            location.href = 'http://metro-xix.web.app';
+            location.href = 'http://metro-x.web.app';
         }
         
         return {
