@@ -87,7 +87,7 @@ export default {
   max-width: 15rem;
 
   @media (min-width: 200px ){
-      max-width: 12.5rem;      
+      max-width: 12rem;      
   }
 
   @media (min-width: 350px ){
@@ -95,11 +95,11 @@ export default {
   }
 
   @media (min-width: 400px ){
-      max-width: 20.7rem;      
+      max-width: 20.5rem;      
   }
 
   @media (min-width: 500px ){
-      max-width: 28.7rem;      
+      max-width: 28.5rem;      
   }
 
   @media (min-width: 768px ){
