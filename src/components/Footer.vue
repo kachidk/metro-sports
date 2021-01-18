@@ -10,8 +10,8 @@ export default {
 <footer class="text-gray-600 body-font dark:text-gray-100">
   <div class="container flex flex-col items-center px-5 py-8 mx-auto sm:flex-row">
     <a class="flex items-center justify-center font-medium text-gray-900 dark:text-gray-100 title-font md:justify-start">
-      <img src="@/assets/img/logo.png" alt="" class="w-16 h-16 p-2"/>
-      <span class="ml-2 text-xl">Metro Sports</span>
+      <img src="@/assets/img/logo.png" alt="" class="p-1 w-14 md:p-2 h-14 md:w-16 md:h-16"/>
+      <span class="ml-2 text-md md:text-xl">Metro Sports</span>
     </a>
     <p class="mt-4 text-sm text-gray-500 dark:text-gray-100 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0">© 2020 Metro Sports —
       <a href="https://twitter.com/kachi_dk_" class="ml-1 text-gray-600 dark:text-gray-100" rel="noopener noreferrer" target="_blank">@kachi_dk_</a>

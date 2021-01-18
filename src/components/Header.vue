@@ -22,11 +22,15 @@ export default {
         function toggleSidebar(){
             this.state.sidebarState = !this.state.sidebarState
         }
+
+        function homepage(){
+            location.href = 'http://metro-xix.web.app';
+        }
         
         return {
             state,
             toggleSidebar,
-           
+            homepage
         }
     }
 }
@@ -37,8 +41,8 @@ export default {
 <div>
     <div class="w-full h-4 bg-black"></div>
     <div class="bg-transparent header-content">
-        <div class="items-center justify-center logo dark:text-gray-50">
-            <img src="@/assets/img/logo.png" alt="" class="w-16 h-16 p-2"/>
+        <div class="items-center justify-center logo dark:text-gray-50" @click="homepage()">
+            <img src="@/assets/img/logo.png" alt="" class="p-2 w-14 h-14 md:w-16 md:h-16" />
             <div class="logo-inner">Metro</div>-sports
         </div>
         <div class="hidden-theme"><Theme/></div>
@@ -99,6 +103,12 @@ export default {
     &-inner{
         font-size: 30px;
         color: $neon-green;
+         @media (max-width: 768px ){
+            font-size: 20px;
+        }
+    }
+    @media (max-width: 768px ){
+        font-size: 20px;
     }
 }
 .header-link-cover{

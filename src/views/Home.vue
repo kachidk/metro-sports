@@ -41,9 +41,9 @@ export default {
   </div>
   <!-- Main Section -->
 <section class="text-gray-600 body-font">
-  <div class="container px-5 mx-auto md:py-20"> 
+  <div class="container mx-auto md:px-5 md:py-20"> 
     <!-- video header -->
-    <div class="flex flex-wrap w-full mb-20">
+    <div class="flex flex-wrap w-full px-5 mb-20">
       <div class="w-full mb-6 lg:w-1/2 lg:mb-0">
         <h1 class="mb-2 text-2xl font-medium text-gray-900 sm:text-3xl title-font dark:text-gray-100">Video Highlights & Results</h1>
         <div class="w-20 h-1 bg-green-500 rounded"></div>
@@ -83,8 +83,27 @@ export default {
 
 <style lang="scss" scoped>
 .btn-cover-max-w{
-  @media (max-width: 768px ){
-      max-width: 18rem;
+
+  max-width: 15rem;
+
+  @media (min-width: 200px ){
+      max-width: 12.5rem;      
+  }
+
+  @media (min-width: 350px ){
+      max-width: 18.4rem;      
+  }
+
+  @media (min-width: 400px ){
+      max-width: 20.7rem;      
+  }
+
+  @media (min-width: 500px ){
+      max-width: 28.7rem;      
+  }
+
+  @media (min-width: 768px ){
+      max-width: 100%;      
   }
 }
 </style>
