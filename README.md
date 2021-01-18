@@ -1,24 +1,6 @@
-# football-app-vue
+# Metro Sports
 
-## Project setup
-```
-npm install
-```
+For Football Highlights
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Visit the site
+See [metro-xix.web.app](https://metro-xix.web.app).
