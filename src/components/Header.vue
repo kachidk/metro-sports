@@ -64,12 +64,12 @@ export default {
     <div v-if="this.state.sidebarState">
         <div class="sidebar-background" @click="toggleSidebar()"></div>
         <div class="sidebar-nav">
-            <div class="sidebar-close-button-cover"> <div class="sidebar-close-button-cover-item-one"><Theme/></div> <v-icon name="times" class="close-button" scale='2.2' @click="toggleSidebar()"/></div>
+            <div class="sidebar-close-button-cover"> <div class="sidebar-close-button-cover-item-one" @click="toggleSidebar()"><Theme/></div> <v-icon name="times" class="close-button" scale='2.2' @click="toggleSidebar()"/></div>
             <ul>
-                <li>
+                <li @click="toggleSidebar()">
                     <router-link to="/" class="sidebar-button"><v-icon name="home" class="v-icon-li"/>Home</router-link>
                 </li>
-                <li>
+                <li @click="toggleSidebar()">
                     <router-link to="/about" class="sidebar-button"><v-icon name="arrow-alt-circle-right" class="v-icon-li"/>About</router-link>
                 </li>
             </ul>
@@ -195,6 +195,7 @@ body.dark .header-link-cover a.router-link-exact-active {
 }
 .sidebar-button{
     display: flex;
+    align-items: center;
     height: 60px;
     padding: 20px;
     color: white;
