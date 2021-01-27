@@ -59,7 +59,7 @@ export default {
           <h2 class="mb-4 text-lg font-medium text-gray-900 title-font dark:text-gray-100">{{ item.title }}</h2>
           <!-- <p class="text-base leading-relaxed">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p> -->
           <!-- highlights button cover -->
-          <div class="flex overflow-x-auto overflow-y-hidden bg-green-100 rounded-md btn-cover-max-w">
+          <div class="flex overflow-x-auto overflow-y-hidden rounded-md md:bg-green-100 btn-cover-max-w">
              <div v-for="(xyz, index) in item.videos" :key="index" class="m-5">
                <!-- highlight button -->
                <div class="flex flex-col items-center justify-center">
@@ -67,7 +67,7 @@ export default {
                    <img :src="item.thumbnail" class="w-full h-full rounded-full" alt="...">
                  </div>
                  <div>
-                   <span class="text-sm whitespace-nowrap">{{ xyz.title }}</span>
+                   <span class="text-sm whitespace-nowrap dark:text-gray-100 md:dark:text-gray-600">{{ xyz.title }}</span>
                  </div> 
                </div>
              </div> 
@@ -104,6 +104,7 @@ export default {
 
   @media (min-width: 768px ){
       max-width: 100%;      
-  }
+  } 
+    
 }
 </style>
